@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="0"
+        android:layout_above="@+id/tuesdayCheck"
+        android:layout_toEndOf="@+id/wednesdayCheck"
+        android:layout_marginStart="12dp"
+        android:id="@+id/mondaySeek" />
+
+    <TextView
+        android:text="Add Class To Schedule"
+        android:layout_width="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_height="30dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Class Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:textColor="@android:color/black" />
+
+    <CheckBox
+        android:text="Tuesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mondayCheck"
+        android:layout_alignStart="@+id/mondayCheck"
+        android:id="@+id/tuesdayCheck" />
+
+    <CheckBox
+        android:text="Thursday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wednesdayCheck"
+        android:layout_alignStart="@+id/wednesdayCheck"
+        android:id="@+id/thursdayCheck" />
+
+    <CheckBox
+        android:text="Friday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thursdayCheck"
+        android:layout_alignStart="@+id/thursdayCheck"
+        android:id="@+id/fridayCheck" />
+
+    <CheckBox
+        android:text="Wednesday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wednesdayCheck"
+        android:layout_below="@+id/tuesdayCheck"
+        android:layout_alignStart="@+id/tuesdayCheck" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="0"
+        android:id="@+id/tuesdaySeek"
+        android:layout_above="@+id/wednesdayCheck"
+        android:layout_alignStart="@+id/wednesdaySeek" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="0"
+        android:id="@+id/wednesdaySeek"
+        android:layout_alignBottom="@+id/wednesdayCheck"
+        android:layout_alignStart="@+id/mondaySeek" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="0"
+        android:id="@+id/thursdaySeek"
+        android:layout_alignBottom="@+id/thursdayCheck"
+        android:layout_alignStart="@+id/wednesdaySeek" />
+
+    <SeekBar
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="40"
+        android:progress="0"
+        android:id="@+id/fridaySeek"
+        android:layout_alignBottom="@+id/fridayCheck"
+        android:layout_alignStart="@+id/thursdaySeek" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/inputLocation"
+        android:layout_alignBottom="@+id/inputLocation"
+        android:layout_alignStart="@+id/editText2" />
+
+    <CheckBox
+        android:text="Monday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mondayCheck"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="8:00am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mondaySeek"
+        android:layout_toEndOf="@+id/mondaySeek"
+        android:id="@+id/mondayTime"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="8:00am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tuesdaySeek"
+        android:layout_toEndOf="@+id/tuesdaySeek"
+        android:id="@+id/tuesdayTime"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="8:00am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/wednesdaySeek"
+        android:layout_toEndOf="@+id/wednesdaySeek"
+        android:id="@+id/wednesdayTime"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="8:00am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thursdaySeek"
+        android:layout_alignEnd="@+id/wednesdayTime"
+        android:id="@+id/thursdayTime"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="8:00am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/fridaySeek"
+        android:layout_toEndOf="@+id/fridaySeek"
+        android:id="@+id/fridayTime"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="300dp"
+        android:id="@+id/submitButton"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="60dp"
+        android:textSize="35sp"
+        android:onClick="submit" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Input Class"
+        android:ems="10"
+        android:id="@+id/inputClass"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignEnd="@+id/mondayTime"
+        android:layout_alignStart="@+id/address" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toEndOf="@+id/inputLocation"
+        android:layout_marginStart="21dp"
+        android:id="@+id/address"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Schedule:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/inputClass"
+        android:layout_toStartOf="@+id/mondaySeek" />
+
+    <Button
+        android:text="Input Location"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputLocation"
+        android:layout_width="150dp"
+        android:onClick="selectLocation"
+        android:layout_below="@+id/fridayCheck"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+</RelativeLayout>
